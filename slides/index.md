@@ -1,152 +1,106 @@
-- title : FsReveal
-- description : Introduction to FsReveal
-- author : Karlkim Suwanmongkol
+- title : Aurelia
+- description : Introduction to Aurelia
+- author : Bastian Töpfer
 - theme : night
 - transition : default
 
 ***
 
-### What is FsReveal?
+### What is Aurelia?
 
-- Generates [reveal.js](http://lab.hakim.se/reveal-js/#/) presentation from [markdown](http://daringfireball.net/projects/markdown/)
-- Utilizes [FSharp.Formatting](https://github.com/tpetricek/FSharp.Formatting) for markdown parsing
-- Get it from [http://fsprojects.github.io/FsReveal/](http://fsprojects.github.io/FsReveal/)
-
-![FsReveal](images/logo.png)
+![FsReveal](images/main-logo.svg)
 
 ***
 
-### Reveal.js
-
-- A framework for easily creating beautiful presentations using HTML.
-
-
-> **Atwood's Law**: any application that can be written in JavaScript, will eventually be written in JavaScript.
-
-***
-
-### FSharp.Formatting
-
-- F# tools for generating documentation (Markdown processor and F# code formatter).
-- It parses markdown and F# script file and generates HTML or PDF.
-- Code syntax highlighting support.
-- It also evaluates your F# code and produce tooltips.
+### Aurelia is/has
+- a medium size framework with no external dependencies.
+- as fast or faster than all other frameworks.
+- more standards compliant than most other frameworks.
+- he most unobstrusive framework today.
+- integrates very well with other libraries. Other frameworks like Angular and React have a harder time with this.
+- has the best support for separated presentation patterns (MVC, MVVM, MVP)
+- is better at dynamic, data-driven UI construction than anything else today.
+- is written in 100% ES 2015/2016, no dependencies except polyfills.
+- no unnecessary DOM abstractions. faster and consume less memory
+- some of the best support for Web Components.
+- the only framework built with a modern, modular architecture.
 
 ***
 
-### Syntax Highlighting
+### Other Choices
 
-#### F# (with tooltips)
-
-    let a = 5
-    let factorial x = [1..x] |> List.reduce (*)
-    let c = factorial a
-
----
-
-#### C#
-
-    [lang=cs]
-    using System;
-
-    class Program
-    {
-        static void Main()
-        {
-            Console.WriteLine("Hello, world!");
-        }
-    }
-
----
-
-#### JavaScript
-
-    [lang=js]
-    function copyWithEvaluation(iElem, elem) {
-        return function (obj) {
-            var newObj = {};
-            for (var p in obj) {
-                var v = obj[p];
-                if (typeof v === "function") {
-                    v = v(iElem, elem);
-                }
-                newObj[p] = v;
-            }
-            if (!newObj.exactTiming) {
-                newObj.delay += exports._libraryDelay;
-            }
-            return newObj;
-        };
-    }
-
-
----
-
-#### Haskell
- 
-    [lang=haskell]
-    recur_count k = 1 : 1 : 
-        zipWith recurAdd (recur_count k) (tail (recur_count k))
-            where recurAdd x y = k * x + y
-
-    main = do
-      argv <- getArgs
-      inputFile <- openFile (head argv) ReadMode
-      line <- hGetLine inputFile
-      let [n,k] = map read (words line)
-      printf "%d\n" ((recur_count k) !! (n-1))
-
-*code from [NashFP/rosalind](https://github.com/NashFP/rosalind/blob/master/mark_wutka%2Bhaskell/FIB/fib_ziplist.hs)*
-
----
-
-### SQL
-
-    [lang=sql]
-    select *
-    from
-    (select 1 as Id union all select 2 union all select 3) as X
-    where Id in (@Ids1, @Ids2, @Ids3)
-
-*sql from [Dapper](https://code.google.com/p/dapper-dot-net/)*
-
----
-
-### Paket
-
-    [lang=paket]
-    source https://nuget.org/api/v2
-
-    nuget Castle.Windsor-log4net >= 3.2
-    nuget NUnit
-    
-    github forki/FsUnit FsUnit.fs
-      
----
-
-### C/AL
-
-    [lang=cal]
-    PROCEDURE FizzBuzz(n : Integer) r_Text : Text[1024];
-    VAR
-      l_Text : Text[1024];
-    BEGIN
-      r_Text := '';
-      l_Text := FORMAT(n);
-
-      IF (n MOD 3 = 0) OR (STRPOS(l_Text,'3') > 0) THEN
-        r_Text := 'Fizz';
-      IF (n MOD 5 = 0) OR (STRPOS(l_Text,'5') > 0) THEN
-        r_Text := r_Text + 'Buzz';
-      IF r_Text = '' THEN
-        r_Text := l_Text;
-    END;
+- Angular 1
+- Angular 2
+- Ember
+- Polymer
+- React
 
 ***
 
-**Bayes' Rule in LaTeX**
+### How do they compare?
 
-$ \Pr(A|B)=\frac{\Pr(B|A)\Pr(A)}{\Pr(B|A)\Pr(A)+\Pr(B|\neg A)\Pr(\neg A)} $
+#### Size
+![FsReveal](images/size.png)
+
+---
+
+#### Performance
+![FsReveal](images/performance.png)
+
+---
+
+#### Standard Compliance
+![FsReveal](images/standard-compliance.png)
+
+---
+
+#### Obtrusiveness
+![FsReveal](images/obtrusiveness.png)
+
+---
+
+#### Interoperability
+![FsReveal](images/interoperability.png)
+
+---
+
+#### Separated Presentation
+![FsReveal](images/separated-presentation.png)
+
+---
+
+#### Project
+![FsReveal](images/project.png)
+
+---
+
+#### Community
+![FsReveal](images/community.png)
+
+---
+
+#### Core Team
+![FsReveal](images/core-team.png)
+
+---
+
+#### Learning Materials
+![FsReveal](images/learning-materials.png)
+
+---
+
+#### Business
+![FsReveal](images/business.png)
+
+---
+
+#### What to choose?
+![FsReveal](images/what-to-choose.png)
+
+***
+
+### Tutorial
+
 
 ***
 
