@@ -10,6 +10,21 @@
 
 ![FsReveal](images/main-logo.svg)
 
+V1 since 27th of July 2016
+
+***
+
+### Why bother?
+
+- NG1 is from 2010, most of the akward ways are obsolete (ES2015/2016)
+- Steep learning curve and litte team knowglede present
+- Known Performance issues - watchers (obsolete dirty checking)
+- techical debt build up since 2010
+' modules, pure HTML5 custom (web) components, shadow DOM that, two-way data binding using Object.observe.
+' new concepts:one-time data binding, controllerAs, bindToController - old concepts like $scope
+
+=> Still have time to change!
+
 ***
 
 ### Aurelia is/has
@@ -100,6 +115,20 @@
 ***
 
 ### Tutorial
+
+
+***
+### Sources
+- https://medium.com/hashnode-insights/rob-eisenberg-on-aurelia-and-how-it-stacks-up-against-angular-2-and-react-82721d714449#.9tcphmfxi
+- https://www.youtube.com/watch?v=PrNYL42x85o or a neutral write up of Kevin O'Shaughnessy https://medium.com/@ZombieCodeKill/choosing-a-javascript-framework-535745d0ab90#.6bjpyzv99
+- https://www.youtube.com/watch?v=gkbZ1LpWQB4#t=469.223226
+- http://aurelia.io 
+- http://www.dotnetrocks.com/?show=1279 (podcast)
+- http://www.ae.be/blog-en/comparing-angular-aurelia-react-js-framework/
+- https://altabel.wordpress.com/2016/03/15/aurelia-as-a-next-generation-ui-framework-comparison-of-aurelia-angular-and-react-js/
+- http://blog.durandal.io/2015/03/16/aurelia-and-angular-2-code-side-by-side/
+- http://blog.durandal.io/2015/03/17/aurelia-angular-2-0-code-side-by-side-part-2/
+
 
 
 ***
