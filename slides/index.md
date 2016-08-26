@@ -25,6 +25,11 @@ V1 since 27th of July 2016
 
 => Still have time to change!
 
+---
+![FsReveal](images/endless-boilerplate.jpg)
+
+' http://blog.durandal.io/2015/03/16/aurelia-and-angular-2-code-side-by-side/
+
 ***
 
 ### Aurelia is/has
